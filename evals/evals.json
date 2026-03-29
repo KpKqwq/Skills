@@ -1,0 +1,23 @@
+{
+  "skill_name": "paper-to-repro-config",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here's a paper I want to reproduce: https://arxiv.org/abs/2302.13971. Can you extract the experimental configuration so I know what I need to reimplement it?",
+      "expected_output": "A repro_config.md file with extracted experimental setup details organized by category (model, training, data, evaluation), with tags for [STATED], [INFERRED], [MISSING], [AMBIGUOUS], [EXTERNAL]",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "i have this pdf ~/Downloads/llama_paper.pdf and i need to understand their training setup. what hyperparameters did they use?",
+      "expected_output": "A repro_config.md file focusing on training hyperparameters and setup, properly tagged by information source",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm trying to reproduce results from a paper that uses a standard Transformer architecture but I'm not sure about their exact training configuration. Here's the abstract and methods section:\n\n\"We train a 125M parameter Transformer model on a dataset of 10B tokens using AdamW optimizer with learning rate 1e-4. We use cosine annealing with warmup of 2000 steps. The model has 6 layers, 8 attention heads, and hidden dimension of 512. Batch size is 256 and we train for 100k steps. For regularization, we use dropout of 0.1 and weight decay of 0.01. Evaluation is performed on a held-out test set using perplexity and accuracy metrics.\"",
+      "expected_output": "A repro_config.md file extracting all stated configuration from the provided text, identifying what's missing (hardware, data details, random seeds, etc.)",
+      "files": []
+    }
+  ]
+}
