@@ -1,0 +1,3 @@
+display_name: Experiment Guardrails
+short_description: Separate data prep from training and inference with explicit artifacts and gates.
+default_prompt: Use this skill when planning or running ML experiments that need strict separation between dataset construction, training, and inference/evaluation.
