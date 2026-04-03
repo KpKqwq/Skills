@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Checkpoint Commit"
+  short_description: "Auto local rollback commits after edits"
+  default_prompt: "Use $git-checkpoint-commit to make code changes and leave a local checkpoint commit I can roll back to."
